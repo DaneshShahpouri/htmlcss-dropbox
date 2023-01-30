@@ -550,10 +550,12 @@ main .section_three .fullscreen_section .full_top .brand{
 
     position: relative;
     border: 15px solid transparent;
+
+    transition: border .3s;
 }
 
 main .section_three .fullscreen_section .full_top .brand:hover{
-    border: 15px solid rgba(255, 255, 255, 0.35);
+    border: 15px solid rgba(255, 255, 255, 0.45);
 }
 
 /* Brand Colors */
@@ -598,12 +600,20 @@ main .section_three .fullscreen_section .full_top .brand img{
     left:50%;
 
     transform: translateX(-50%) translateY(-50%);
+
+    transition: width .5s;
+}
+
+main .section_three .fullscreen_section .full_top .brand:hover img{
+    width: 75%;
 }
 
 main .section_three .fullscreen_section .full_top .center_description{
     padding: 30px;
     max-height: calc((100vw - 11px) / 3);
     overflow-y: auto;
+
+    background-color: rgb(245, 245, 245);
 }
 
 main .section_three .fullscreen_section .full_top .center_description .text_container img{
