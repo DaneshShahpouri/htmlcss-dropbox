@@ -568,6 +568,7 @@ main .section_three .fullscreen_section .full_top .brand{
     border: 15px solid transparent;
 
     transition: border .3s;
+
 }
 
 main .section_three .fullscreen_section .full_top .brand:hover{
@@ -580,7 +581,7 @@ main .section_three .fullscreen_section .full_top .brand:hover{
 }
 
 #two{
-    background-color: rgb(97, 8, 43)c;
+    background-color: rgb(97, 8, 43);
 }
 
 #three{
@@ -617,11 +618,14 @@ main .section_three .fullscreen_section .full_top .brand img{
 
     transform: translateX(-50%) translateY(-50%);
 
-    transition: width .5s;
+    transition: width .5s, filter 0.5s;
+
+    filter: invert(.9);
 }
 
 main .section_three .fullscreen_section .full_top .brand:hover img{
     width: 75%;
+    filter: invert(1);
 }
 
 main .section_three .fullscreen_section .full_top .center_description{
