@@ -100,6 +100,7 @@ nav .nav_wrapper{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
 
     padding: 0px 10px;
 
@@ -149,6 +150,7 @@ nav .nav_wrapper .nav_left_side .logo_container a img{
 .jumbo *{
     background-color: rgba(50, 96, 134, 0.1);
 }
+/* DEBUG */
 
 .jumbo{
 background-color: rgb(180, 208, 231);
@@ -179,7 +181,7 @@ margin-top: 60px;
     gap: 45px;
     flex-basis:30%;
     flex-shrink: 4;
-    flex-grow: 1;
+    flex-grow: 0.7;
 
     min-width: 200px;
 
@@ -213,7 +215,7 @@ margin-top: 60px;
    display: flex;
    justify-content: center;
 
-   min-width: 480px;
+   min-width: 560px;
    margin-bottom: -40px;
 
    padding: 10px 0;
@@ -229,3 +231,68 @@ margin-top: 60px;
     object-fit: contain;
 }
 /* fine JUMBO */
+
+
+/* MAIN */
+main *{
+    background-color: rgba(255, 153, 0, 0.05);
+}
+
+main{
+    padding-top:100px;
+    background-color: rgba(255, 153, 0, 0.1);
+    height: 100vh;
+}
+
+
+/* Section one */
+main .main_inner .section_one h2{
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+/* Checkbox */
+main .fatturazione .check_fattu{
+    display: flex;
+    gap: 20px;
+}
+
+main .fatturazione .check_fattu li{
+    list-style-type: none;
+}
+
+/* Piano di business */
+main .fatturazione .business_plans{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+main .fatturazione .business_plans .business_columns{
+    padding:40px 0px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+main .fatturazione .business_plans .business_columns .column{
+    width: 30%;
+    border:1px solid black;
+}
+
+/* Column */
+main .fatturazione .business_plans .business_columns .column .header_column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+    padding: 10px 0;
+
+    border-bottom:1px solid black;
+} 
+
+main .fatturazione .business_plans .business_columns .column .header_column h4{
+    font-weight: 300;
+}
+
+/* fine MAIN */
