@@ -241,7 +241,6 @@ main *{
 main{
     padding-top:100px;
     background-color: rgba(255, 153, 0, 0.1);
-    height: 100vh;
 }
 
 
@@ -295,4 +294,56 @@ main .fatturazione .business_plans .business_columns .column .header_column h4{
     font-weight: 300;
 }
 
+main .fatturazione .business_plans .business_columns .column .main_column{
+    padding: 30px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2em;
+
+    font-size: 0.8em;
+}
+
+
+main .fatturazione .business_plans .business_columns .column .main_column .main_top,
+main .fatturazione .business_plans .business_columns .column .main_column .middle_main ul,
+main .fatturazione .business_plans .business_columns .column .main_column .middle_main_two,
+main .fatturazione .business_plans .business_columns .column .main_column .footer_main{
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+}
+
+main .fatturazione .business_plans .business_columns .column .main_column .middle_main_two .line{
+    display: inline-block;
+    width: 50px;
+    border-top:1px solid grey ;
+}
+
+main .fatturazione .business_plans .business_columns .column .main_column .main_top h3{
+    font-size: 1.5em;
+    padding:10px 0;
+}
+
+main .fatturazione .business_plans .business_columns .column .main_column .main_top>span{
+    font-weight: 300;
+    color: rgb(54, 54, 54);
+}
+
+
+main .fatturazione .business_plans .business_columns .column .main_column ul li{
+    list-style-type: none;
+    display: flex;
+    gap: 5px;
+}
+
+main .fatturazione .business_plans .business_columns .column .main_column .footer_main .plan_features{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+main .fatturazione .business_plans .business_columns .column .main_column .footer_main .plan_features .control_icon{
+    color: rgb(7, 96, 255);
+    font-weight: 400;
+}
 /* fine MAIN */
