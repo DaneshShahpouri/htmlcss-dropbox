@@ -108,16 +108,16 @@ nav ul li{
     list-style-type: none;
     height: 100%;
     
-    border-bottom:1px solid transparent;
+    border-bottom:2px solid transparent;
 }
     /* HOVER */
 nav ul li:hover{
-    border-bottom:1px solid rgb(19, 148, 253);
+    border-bottom:2px solid rgb(19, 148, 253);
 }
 
 nav ul li a{
     text-decoration: none;
-    color: rgb(37, 37, 37);
+    color: rgb(137, 137, 137);
     font-size: .70em;
     font-weight: 400;
     
@@ -169,6 +169,7 @@ nav .nav_wrapper .nav_left_side .logo_container{
     display: flex;
     align-items: center;
     height:100%;
+    padding-right: 5px;
 }
 
 nav .nav_wrapper .nav_left_side .logo_container a{
@@ -737,8 +738,8 @@ footer .footer_inner{
 }
 
 footer .footer_inner .footer_column{
-    width: calc(100% / 5);
-    font-size: .8em;
+    width: 100%;
+    font-size: .7em;
     font-weight: 300;
 }
 
