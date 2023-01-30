@@ -278,6 +278,7 @@ main .fatturazione .business_plans .business_columns .column{
     border:1px solid black;
 }
 
+
 /* Column */
 main .fatturazione .business_plans .business_columns .column .header_column{
     display: flex;
@@ -346,4 +347,51 @@ main .fatturazione .business_plans .business_columns .column .main_column .foote
     color: rgb(7, 96, 255);
     font-weight: 400;
 }
+
+/* Last Column */
+main .fatturazione .business_plans .last_column{
+    width: 100%;
+    border:1px solid black;
+}
+
+main .fatturazione .business_plans .last_column .header_column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+    padding: 10px 0;
+
+    border-bottom:1px solid black;
+} 
+
+main .fatturazione .business_plans .last_column .main_column{
+    display: flex;
+    justify-content: space-between;
+    padding:30px
+}
+
+main .fatturazione .business_plans .last_column .main_column .main_left{
+    width:70%;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+main .fatturazione .business_plans .last_column .main_column .main_right{
+    width: 30%;
+
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+}
+
+/* fine Piano di business */
+
+
+/* badge box */
+
+/* fine badge box */
+
+
 /* fine MAIN */
