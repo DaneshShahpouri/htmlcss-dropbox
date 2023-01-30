@@ -91,12 +91,6 @@
 
 
 /* NAVBAR */
-
-nav *{
-    background-color: rgba(0, 45, 82, 0.1);
-}
-/* fineDEBUG */
-
 /* NavCommons */
 nav{
     color: black;
@@ -189,11 +183,6 @@ nav .nav_wrapper .nav_left_side .logo_container a img{
 
 
 /* JUMBO */
-.jumbo *{
-    background-color: rgba(50, 96, 134, 0.1);
-}
-/* DEBUG */
-
 .jumbo{
 background-color: rgb(180, 208, 231);
 margin-top: 60px;
@@ -276,13 +265,9 @@ margin-top: 60px;
 
 
 /* MAIN */
-main *{
-    background-color: rgba(255, 153, 0, 0.05);
-}
 
 main{
     padding-top:100px;
-    background-color: rgba(255, 153, 0, 0.1);
 }
 
 
