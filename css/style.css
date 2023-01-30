@@ -524,6 +524,8 @@ main .section_three .header_section_three h2{
 }
 
 /* FULLSCREEN */
+
+/* TOP SIDE */
 main .section_three .fullscreen_section{
     width: calc(100vw - 10px);
 }
@@ -551,7 +553,7 @@ main .section_three .fullscreen_section .full_top .brand{
 }
 
 main .section_three .fullscreen_section .full_top .brand:hover{
-    border: 15px solid rgba(255, 255, 255, 0.5);
+    border: 15px solid rgba(255, 255, 255, 0.35);
 }
 
 /* Brand Colors */
@@ -616,6 +618,44 @@ main .section_three .fullscreen_section .full_top .center_description .text_cont
 main .section_three .fullscreen_section .full_top .center_description .text_container figcaption{
     font-size:.8em
 }
+
+/* BOTTOM SIDE */
+main .section_three .fullscreen_section .full_bottom{
+    background-color: rgb(180, 208, 231);
+}
+
+main .section_three .fullscreen_section .full_bottom .full_bottom_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 40px 0;
+}
+
+main .section_three .fullscreen_section .full_bottom .full_bottom_inner h2{
+    display: inline-block;
+    width:55%; 
+    font-size: 2em;
+    color:rgb(97, 8, 43);  
+}
+
+main .section_three .fullscreen_section .full_bottom .full_bottom_inner .btn{
+    padding:5px 10px;
+    background-color: white;
+    color: black;
+}
+
+main .section_three .fullscreen_section .full_bottom .full_bottom_inner .btn:hover{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+}
 /* fine section Three */
+
+
+/* Section four */
+
+
+/* fine Section four */
+
 
 /* fine MAIN */
