@@ -44,6 +44,20 @@
 .btn.primary:hover{
     color: white;
     background-color: rgb(51, 129, 255);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn.secondary{
+    color: rgb(0, 0, 0);
+    background-color:transparent;
+    border: 1.3px solid black;
+}
+
+.btn.secondary:hover{
+    color: rgb(0, 0, 0);
+    background-color:transparent;
+    border: 1.3px solid black;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 /* COMMONS */
 
@@ -245,8 +259,8 @@ main{
 
 
 /* Section one */
-main .main_inner .section_one h2{
-    font-size: 2em;
+main .main_inner section h2{
+    font-size: 1.8em;
     margin-bottom: 1em;
 }
 
@@ -264,6 +278,8 @@ main .fatturazione .check_fattu li{
 main .fatturazione .business_plans{
     display: flex;
     flex-flow: column nowrap;
+
+    padding-bottom:70px;
 }
 
 main .fatturazione .business_plans .business_columns{
@@ -391,7 +407,78 @@ main .fatturazione .business_plans .last_column .main_column .main_right{
 
 /* badge box */
 
+main .fatturazione .badge_box_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+
+    padding-bottom: 60px;
+}   
+
+main .fatturazione .badge_box_wrapper .img_container{
+    width: 60%;
+}
+
+main .fatturazione .badge_box_wrapper .img_container img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+main .fatturazione .badge_box_wrapper .text_container{
+    width: 35%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px 30px 0px 0px;
+    line-height: 30px;
+}
+
+main .fatturazione .badge_box_wrapper .text_container h4{
+    font-size: 1.4em;
+}
+
+main .fatturazione .badge_box_wrapper .text_container p{
+    font-size: 0.9em;
+}
 /* fine badge box */
+
+
+
+
+/* section TWO */
+main .section_two .cards_container{
+    padding-top: 30px;
+    padding-bottom:50px;feat:
+}
+
+main .section_two .card_wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+main .section_two .card_wrapper .card{
+    width: calc(100% / 3 - 20px);
+    min-width: 200px;
+}
+
+main .section_two .card_wrapper .card .img_container{
+    position: relative;
+    left:0;
+    top:0;
+}
+
+main .section_two .card_wrapper .card .img_container img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/* fine section TWO */
 
 
 /* fine MAIN */
