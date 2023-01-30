@@ -59,6 +59,27 @@
     border: 1.3px solid black;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
+
+/* SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 /* COMMONS */
 
 
@@ -451,7 +472,7 @@ main .fatturazione .badge_box_wrapper .text_container p{
 /* section TWO */
 main .section_two .cards_container{
     padding-top: 30px;
-    padding-bottom:50px;feat:
+    padding-bottom:50px;
 }
 
 main .section_two .card_wrapper{
@@ -467,6 +488,17 @@ main .section_two .card_wrapper .card{
     min-width: 200px;
 }
 
+main .section_two .card_wrapper .card p{
+    padding:10px 0;
+    font-size: 0.8em;
+}
+
+main .section_two .card_wrapper .card h4{
+    padding:10px 0;
+    font-size: 0.9em;
+}
+
+
 main .section_two .card_wrapper .card .img_container{
     position: relative;
     left:0;
@@ -480,5 +512,58 @@ main .section_two .card_wrapper .card .img_container img{
 
 /* fine section TWO */
 
+
+/* section Three */
+main .section_three .header_section_three{
+    margin-bottom: 50px;
+}
+
+main .section_three .header_section_three h2{
+    padding: 30px 0;
+}
+
+/* FULLSCREEN */
+main .section_three .fullscreen_section{
+    width: calc(100vw - 10px);
+    height:100px;
+    background-color: green;
+}
+
+main .section_three .fullscreen_section .full_top{
+    display: flex;
+    width: 100%;
+}
+
+main .section_three .fullscreen_section .full_top>*{
+    flex-grow:1;
+    background-color: blue;
+}
+
+main .section_three .fullscreen_section .full_top .right_full_brand,
+main .section_three .fullscreen_section .full_top .left_full_brand{
+    flex-shrink: 0;
+    width: calc(100% / 3);
+    display: flex;
+    flex-flow: row wrap;
+}
+
+main .section_three .fullscreen_section .full_top .brand{
+    width: 50%;
+    padding-bottom: 50%;
+    background-color: antiquewhite;
+
+    position: relative;
+}
+
+main .section_three .fullscreen_section .full_top .brand img{
+    width: 70%;
+    position: absolute;
+    top:50%;
+    left:50%;
+
+    transform: translateX(-50%) translateY(-50%);
+
+}
+/* fine section Three */
 
 /* fine MAIN */
