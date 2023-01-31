@@ -693,8 +693,12 @@ main .section_three .fullscreen_section .full_bottom .full_bottom_inner .btn:hov
 
 
 /* Section four */
+main .section_four .section_inner{
+    padding: 70px 0;
+} 
+
 main .section_four .section_inner h2{
-    padding: 40px 0;
+    padding: 60px 0;
 } 
 
 main .section_four .section_inner .ask_section ul li{
@@ -702,7 +706,7 @@ main .section_four .section_inner .ask_section ul li{
 } 
 
 main .section_four .section_inner .ask_section{
-    padding-bottom: 100px;
+    padding-bottom: 150px;
 }
 
 main .section_four .section_inner .ask_section ul li .visible{
