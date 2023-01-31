@@ -548,10 +548,6 @@ main .section_three .header_section_three h2{
 /* FULLSCREEN */
 
 /* TOP SIDE */
-main .section_three .fullscreen_section{
-    width: calc(100vw - 10px);
-}
-
 main .section_three .fullscreen_section .full_top{
     display: flex;
     width: 100%;
@@ -561,14 +557,14 @@ main .section_three .fullscreen_section .full_top .right_full_brand,
 main .section_three .fullscreen_section .full_top .left_full_brand{
     flex-grow: 1;
     flex-shrink: 0;
-    width: calc(100% / 3);
+    width: calc(100vw / 3);
     display: flex;
     flex-flow: row wrap;
 }
 
 main .section_three .fullscreen_section .full_top .brand{
-    width: calc((100vw - 11px) / 6);
-    height: calc((100vw - 11px) / 6);
+    width: calc(100vw / 6);
+    height: calc(100vw / 6);
 
     position: relative;
     border: 15px solid transparent;
@@ -636,7 +632,7 @@ main .section_three .fullscreen_section .full_top .brand:hover img{
 
 main .section_three .fullscreen_section .full_top .center_description{
     padding: 30px;
-    max-height: calc((100vw - 11px) / 3);
+    max-height: calc(100vw / 3);
     overflow-y: auto;
 
     background-color: rgb(245, 245, 245);
