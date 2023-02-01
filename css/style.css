@@ -3,15 +3,93 @@
     margin:0;
     box-sizing: border-box;
 
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     scroll-behavior: smooth;
 }
 
-/* .clearfix:after{
-    content: "";
-    display: block;
-    clear: both;
-} */
+/* ANIMATION--------------------------- */
+@keyframes btn_hover{
+    0%{
+        transform:scale(1)
+    }
+
+    50%{
+        transform:scale(1.05)
+    }
+
+    100%{
+        transform:scale(1)
+    }
+}
+
+
+@keyframes arrow{ 
+    0%{
+        bottom:0px
+    }
+
+    50%{
+        bottom: 5px;
+    }
+
+    100%{
+        bottom:0px
+    }
+}
+
+@keyframes img{ 
+    0%{
+        bottom:-10px
+    }
+
+    50%{
+        bottom: 15px;
+    }
+
+    100%{
+        bottom:-10px
+    }
+}
+
+@keyframes jumbo_start{
+    0%{
+        margin-bottom:100vh;
+        max-height:0vh;
+        overflow:hidden;
+        opacity:0;
+    }
+
+    49%{
+        overflow:hidden
+    }
+    50%{
+        overflow:none;
+        opacity:1
+    }
+
+    100%{
+        margin-bottom:0vh;
+        max-height:90vh;
+        overflow:none;
+    }
+}
+
+@keyframes img_start{
+    0%{
+        opacity:0
+    }
+
+    30%{
+        opacity:0
+    }
+
+    100%{
+        opacity:1
+    }
+}
+
+/* fine ANIMATION---------------------------*/
+
 
 .centered_header{
     width: 70%;
@@ -55,8 +133,17 @@
 .btn.primary:hover{
     color: white;
     background-color: rgb(51, 129, 255);
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-    transform: scale(1.05);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    animation:btn_hover 1s infinite;
+}
+
+.btn.primary:active{
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.0);
+    transform: scale(.95);
+    background-color: rgb(26, 69, 139);
+    color: rgb(150, 150, 150);
+    transition: all 0s;
+    animation:none;
 }
 
 .btn.secondary{
@@ -73,7 +160,16 @@
     background-color:transparent;
     border: 1.3px solid black;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-    transform: scale(1.05);
+    animation:btn_hover 1s infinite;
+}
+
+.btn.secondary:active{
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.0);
+    transform: scale(.95);
+    background-color: rgb(203, 203, 203);
+    
+    transition: all 0s;
+    animation:none;
 }
 
 a{
@@ -203,6 +299,8 @@ nav .nav_wrapper .nav_left_side .logo_container a img{
 .jumbo{
 background-color: rgb(180, 208, 231);
 margin-top: 60px;
+
+animation:jumbo_start 2s;
 }
 
 .jumbo .jumbo_inner{
@@ -270,20 +368,6 @@ margin-top: 60px;
     color:  rgb(0, 98, 255);
 }
 
-@keyframes arrow{ 
-    0%{
-        bottom:0px
-    }
-
-    50%{
-        bottom: 5px;
-    }
-
-    100%{
-        bottom:0px
-    }
-}
-
 /* right-Side-Jumbo */
 .jumbo .jumbo_inner .jumbo_content .img_wrapper{
    flex-basis:70%;
@@ -307,6 +391,7 @@ margin-top: 60px;
     right: 0;
 
     object-fit: contain;
+    animation:img_start 4s , img 4s ease infinite; 
 }
 /* fine JUMBO */
 
@@ -686,7 +771,7 @@ main .section_three .fullscreen_section .full_bottom .full_bottom_inner .btn{
     background-color: white;
     color: rgb(151, 151, 151);
     box-shadow: 0px 5px 10px transparent;
-
+    trasnform:scale(1);
     transition: all 0.4s;
 }
 
@@ -694,10 +779,18 @@ main .section_three .fullscreen_section .full_bottom .full_bottom_inner .btn:hov
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
     color: black;
-    transform: scale(1.05);
+    animation: btn_hover 1s infinite ease-in;
+}
+
+main .section_three .fullscreen_section .full_bottom .full_bottom_inner .btn:active{
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.0);
+    transform: scale(.95);
+    background-color: rgb(209, 209, 209);
+    
+    transition: all 0s;
+    animation:none;
 }
 /* fine section Three */
-
 
 /* Section four */
 main .section_four .section_inner{
