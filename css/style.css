@@ -460,10 +460,36 @@ main .main_inner section h2{
 main .fatturazione .check_fattu{
     display: flex;
     gap: 20px;
+    position: relative;
+    top:0;left:0;
 }
 
 main .fatturazione .check_fattu li{
     list-style-type: none;
+}
+
+main .fatturazione .check_fattu .first_li{
+    position: absolute;
+    width: 100%;
+}
+
+main .fatturazione .check_fattu .first_li .hidden_float_business{
+    opacity:1;
+    /* DEBUG */
+    position: absolute;
+    top:40px;
+    left:0;
+    background-color: white;
+    display: block;
+}
+
+main .fatturazione .check_fattu .first_li #ch:checked + .hidden_float_business{
+    display: none;
+}
+
+main .fatturazione .check_fattu .second_li{
+    position:absolute;
+    left:187px;
 }
 
 /* Piano di business */
@@ -473,9 +499,12 @@ main .fatturazione .business_plans{
 
     margin-bottom:70px;
 }
+main .fatturazione .business_plans.under{
+    margin-top:40px;
+}
 
 main .fatturazione .business_plans .business_columns{
-    padding:40px 0px;
+    margin-bottom:40px;
 
     display: flex;
     justify-content: space-between;
