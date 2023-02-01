@@ -76,6 +76,14 @@
     transform: scale(1.05);
 }
 
+a{
+    color:rgb(0, 98, 255);
+}
+
+a:hover{
+    color:rgb(0, 0, 151);
+}
+
 /* SCROLLBAR */
 /* width */
 ::-webkit-scrollbar {
@@ -331,7 +339,7 @@ main .fatturazione .business_plans{
     display: flex;
     flex-flow: column nowrap;
 
-    padding-bottom:70px;
+    margin-bottom:70px;
 }
 
 main .fatturazione .business_plans .business_columns{
