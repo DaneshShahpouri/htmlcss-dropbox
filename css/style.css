@@ -88,6 +88,23 @@
     }
 }
 
+
+@keyframes title_start_1{
+    0%{
+        opacity:0;
+        left:-150px
+    }
+
+    25%{
+        opacity:0;
+        left:-150px
+    }
+
+    100%{
+        opacity:1;
+        left:0px
+    }
+}
 /* fine ANIMATION---------------------------*/
 
 
@@ -185,12 +202,10 @@ a:hover{
 ::-webkit-scrollbar {
     width: 10px;
   }
-  
   /* Track */
   ::-webkit-scrollbar-track {
     background: transparent;
   }
-  
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #888;
@@ -310,6 +325,10 @@ animation:jumbo_start 2s;
 .jumbo .jumbo_inner .title_wrapper h1{
     font-size: 3em;
     padding: 0.5em 0;
+    position:relative;
+    left:0; top:0;
+
+    animation: title_start_1 2s;
 }
 
 .jumbo .jumbo_inner .jumbo_content{
@@ -332,6 +351,11 @@ animation:jumbo_start 2s;
     min-width: 200px;
 
     padding: 10px 0;
+
+    position:relative;
+    left:0; top:0;
+
+    animation: title_start_1 2.5s;
 }
 
 .jumbo .jumbo_inner .jumbo_content .text_container .top_side{
