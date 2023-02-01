@@ -8,6 +8,29 @@
 }
 
 /* ANIMATION--------------------------- */
+
+@keyframes AnimationCentral{
+
+    0%{
+        opacity:0
+    }
+
+    4.16%{
+        opacity:1
+    }
+
+    12.48%{
+        opacity:1
+    }
+
+    16.64%{
+        opacity:0
+    }
+    100%{
+        opacity:0
+    }
+}
+
 @keyframes btn_hover{
     0%{
         transform:scale(1)
@@ -750,12 +773,68 @@ main .section_three .fullscreen_section .full_top .brand:hover img{
 }
 
 main .section_three .fullscreen_section .full_top .center_description{
-    padding: 30px;
+   
     max-height: calc(100vw / 3);
     overflow-y: auto;
 
+    position:relative;
     background-color: rgb(245, 245, 245);
 }
+main .section_three .fullscreen_section .full_top .center_description .text_container_inner_first{
+    background-color:  rgb(245, 245, 245);
+    position: relative;
+    left:0; top:0;
+    padding: 30px;
+}
+/* PARTE CENTRALE Animation----------- */
+main .section_three .fullscreen_section .full_top .center_description .text_container_inner{
+    background-color: rgb(245, 245, 245);
+    position:absolute;
+    top:0;left:0;
+    padding: 30px 30px 50px 30px;
+}
+
+#box_uno{
+    animation:AnimationCentral 32s infinite;
+}
+
+#box_due{
+    opacity: 0;
+    animation:AnimationCentral 32s 4s infinite;
+}
+
+#box_tre{
+    opacity: 0;
+    animation:AnimationCentral 32s 8s infinite;
+}
+
+#box_quattro{
+    opacity: 0;
+    animation:AnimationCentral 32s 12s infinite;
+}
+
+#box_cinque{
+    opacity: 0;
+    animation:AnimationCentral 32s 16s infinite;
+}
+
+#box_sei{
+    opacity: 0;
+    animation:AnimationCentral 32s 20s infinite;
+}
+
+#box_sette{
+    opacity: 0;
+    animation:AnimationCentral 32s 24s infinite;
+}
+
+#box_otto{
+    opacity: 0;
+    animation:AnimationCentral 32s 28s infinite;
+    
+}
+
+/* PARTE CENTRALE Animation----------- */
 
 main .section_three .fullscreen_section .full_top .center_description .text_container img{
     width:50%
@@ -769,6 +848,9 @@ main .section_three .fullscreen_section .full_top .center_description .text_cont
 main .section_three .fullscreen_section .full_top .center_description .text_container figcaption{
     font-size:.8em
 }
+
+
+
 
 /* BOTTOM SIDE */
 main .section_three .fullscreen_section .full_bottom{
